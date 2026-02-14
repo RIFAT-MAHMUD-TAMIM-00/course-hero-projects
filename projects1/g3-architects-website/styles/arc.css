@@ -1,0 +1,237 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+/* shared styles for the website */
+.display-flex {
+  display: flex;
+}
+/* dark-02 */
+.text-gray {
+  color: #424242;
+}
+/* dark-03 */
+.text-light-gray {
+  color: #727272;
+}
+.text-primary {
+  color: #ff900e;
+}
+.small-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.fact-name {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #727272;
+  margin-top: 10px;
+}
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.1);
+}
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.fact-number {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+/* button primary */
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
+main {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* header style */
+
+/* nav related styles  */
+
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-link {
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav-items {
+  list-style: none;
+  margin-right: 30px;
+}
+.band {
+  font-size: 3rem;
+  font-weight: 700;
+}
+.nav-bar,
+.banner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* banner details  */
+.banner-content {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.banner-title {
+  font-weight: 700;
+  font-size: 4rem;
+}
+.banner-image {
+  width: 100%;
+}
+.teams {
+  align-items: center;
+}
+.team-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+main > section {
+  margin-top: 130px;
+}
+.our-features {
+  margin-left: 130px;
+  max-width: 530px;
+}
+
+#quick-list {
+  font-weight: 500;
+}
+#experiance-bedge{
+  padding: 45px 42px;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+#experiance-year{
+  font-size: 4rem;
+  font-weight: 700;
+  
+}
+#experiance-year-medium{
+  font-size: 1.5rem;
+  font-weight: 500;
+
+}
+/* features section related style */
+#features-section-titlee {
+  border-left: 5px solid #ff900e;
+  padding-left: 20px;
+}
+.feature-card {
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+}
+.feature-card .feature-title {
+  font-weight: 600;
+  font-size: 1.25rem;
+}
+.features {
+  gap: 140px;
+}
+/* Some facts related styles */
+.fact-card {
+  border: 1px solid #ff900e;
+  width: 240px;
+  height: 240px;
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-discription {
+  max-width: 540px;
+}
+/* sponsor related styles */
+.sponsor-info {
+  max-width: 540px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sponsor-company {
+  display: grid;
+  /* margin: 0 auto; */
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-company img {
+  filter: grayscale(100%);
+}
+.featured-architect{
+  width: 100%;
+
+}
+/* responsive media query  */
+@media screen and (max-width: 576px) {
+  .nav-bar,
+  .nav-link,
+  .features,
+  .teams {
+    flex-direction: column;
+  }
+  .team-img-container,
+  .facts-container,
+  .sponsor-company {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .facts-container,
+  .sponsor-company {
+    justify-items: center;
+    gap: 24px;
+  }
+  .our-features {
+    margin-left: 20px;
+  }
+  .sponsor-company {
+    justify-items: center;
+    gap: 50px;
+  }
+  #experiance-bedge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+
+/* meduimu size design */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams .features{
+    flex-direction: column;
+  }
+  .our-features {
+    margin: 50px auto;
+  }
+  .sponsor-company,
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+  }
+  #experiance-bedge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
